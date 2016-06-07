@@ -71,6 +71,13 @@
         "description": "Name for VM subnet in the new VNet"
       }
     },
+    "subnet2Name": {
+      "type": "string",
+      "defaultValue": "Subnet2",
+      "metadata": {
+        "description": "Name for VM subnet in the new VNet"
+      }
+    },
     "gatewaySubnet": {
       "type": "string",
       "defaultValue": "GatewaySubnet",
@@ -141,6 +148,12 @@
             "name": "[parameters('subnet1Name')]",
             "properties": {
               "addressPrefix": "[parameters('subnet1Prefix')]"
+            }
+          },
+          {
+            "name": "[parameters('subnet2Name')]",
+            "properties": {
+              "addressPrefix": "[parameters('subnet2Prefix')]"
             }
           },
           {
