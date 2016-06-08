@@ -1,43 +1,48 @@
 ﻿{
-  "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "$schema": "http://schema.management.azure.com/schemas/2014-04-01-preview/deploymentParameters.json",
   "contentVersion": "1.0.0.0",
   "parameters": {
-    "virtualNetworkName": {
-      "value": "vNet01"
+    "enableBgp": {
+      "value": "false"
+    },
+    "gatewayType": {
+      "value": "Vpn"
+    },
+    "vpnType": {
+      "value": "PolicyBased"
     },
     "localGatewayName": {
-      "value": "ASM-vNet02"
+      "value": "ASM-vnet02"
     },
     "localGatewayIpAddress": {
-      "value": "137.117.100.62"
+      "value": "13.79.155.210"
     },
     "localGatewayAddressPrefix": {
       "value": "10.2.0.0/16"
     },
-    "gatewayPublicIPName": {
-      "value": "GW-vNet01-IP"
-    },
-    "gatewayName": {
-      "value": "GW-vNet01"
+    "virtualNetworkName": {
+      "value": "vnet01"
     },
     "addressPrefix": {
       "value": "10.0.0.0/16"
     },
+    "subnet1Name": {
+      "value": "DMZ"
+    },
+    "gatewaySubnet": {
+      "value": "GatewaySubnet"
+    },
     "subnet1Prefix": {
       "value": "10.0.0.0/24"
-    },
-    "subnet2Prefix": {
-      "value": "10.0.1.0/24"
     },
     "gatewaySubnetPrefix": {
       "value": "10.0.254.254/28"
     },
-    "subnet1Name": {
-      "value": "DMZ"
+    "gatewayPublicIPName": {
+      "value": "GW-vnet01-IP"
     },
-    "subnet2Name": {
-      "value": "Management"
+    "gatewayName": {
+      "value": "GW-vnet01"
     }
   }
 }
-
