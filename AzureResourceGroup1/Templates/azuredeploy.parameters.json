@@ -3,40 +3,31 @@
   "contentVersion": "1.0.0.0",
   "parameters": {
     "virtualNetworkName": {
-      "value": "vNet01"
+      "value": "GEN-UNIQUE-8"
     },
     "localGatewayName": {
-      "value": "ASM-vNet02"
+      "value": "GEN-UNIQUE-8"
     },
     "localGatewayIpAddress": {
       "value": "137.117.100.62"
     },
     "localGatewayAddressPrefix": {
-      "value": "10.2.0.0/16"
+      "value": "10.1.0.0/16"
     },
     "gatewayPublicIPName": {
-      "value": "GW-vNet01-IP"
+      "value": "GEN-UNIQUE-8"
     },
     "gatewayName": {
-      "value": "GW-vNet01"
+      "value": "GEN-UNIQUE-8"
     },
     "addressPrefix": {
-      "value": "10.0.0.0/16"
+      "value": "10.3.0.0/16"
     },
     "subnet1Prefix": {
-      "value": "10.0.0.0/24"
-    },
-    "subnet2Prefix": {
-      "value": "10.0.1.0/24"
+      "value": "10.3.0.0/24"
     },
     "gatewaySubnetPrefix": {
-      "value": "10.0.254.254/28"
-    },
-    "subnet1Name": {
-      "value": "DMZ"
-    },
-    "subnet2Name": {
-      "value": "Management"
+      "value": "10.3.200.0/29"
     }
   }
 }
